@@ -82,5 +82,159 @@
             </objects>
             <point key="canvasLocation" x="381" y="426"/>
         </scene>
+        <!--CameraVC-->
+        <scene sceneID="Ztq-C1-K3Z">
+            <objects>
+                <viewController id="CKM-A6-QJ1" customClass="CameraVC" customModule="VideoSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tge-Yn-i0E"/>
+                        <viewControllerLayoutGuide type="bottom" id="jAN-ta-oGW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1qq-U6-Ov4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wN-Ss-x1l">
+                                <rect key="frame" x="261" y="20" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="vhw-cx-0tX"/>
+                                    <constraint firstAttribute="width" constant="45" id="wvr-Zg-cYM"/>
+                                </constraints>
+                                <state key="normal" title="F"/>
+                                <connections>
+                                    <action selector="btnFlashTapped:" destination="CKM-A6-QJ1" eventType="touchUpInside" id="sDh-F9-r5i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqv-bD-mmF">
+                                <rect key="frame" x="261" y="415" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Z0U-qR-kJZ"/>
+                                    <constraint firstAttribute="height" constant="45" id="mg2-1j-SUc"/>
+                                </constraints>
+                                <state key="normal" title="G"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cO-nj-qGV">
+                                <rect key="frame" x="14" y="415" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="W86-am-ppS"/>
+                                    <constraint firstAttribute="width" constant="45" id="bK0-tv-tDV"/>
+                                </constraints>
+                                <state key="normal" title="FR"/>
+                                <connections>
+                                    <action selector="btnFrontRearTapped:" destination="CKM-A6-QJ1" eventType="touchUpInside" id="373-5t-bcE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-8d-ASF">
+                                <rect key="frame" x="14" y="20" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="SVW-ba-Yd4"/>
+                                    <constraint firstAttribute="height" constant="45" id="nTC-ha-nio"/>
+                                </constraints>
+                                <state key="normal" title="C"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wj-lo-jDN" customClass="RecordButton" customModule="VideoSlider" customModuleProvider="target">
+                                <rect key="frame" x="110" y="360" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="heU-MJ-pCq"/>
+                                    <constraint firstAttribute="height" constant="100" id="pWK-ww-pos"/>
+                                </constraints>
+                                <state key="normal" title="Cam"/>
+                                <connections>
+                                    <action selector="handleSingleTap:" destination="CKM-A6-QJ1" eventType="touchUpInside" id="IUu-EZ-er9"/>
+                                    <outletCollection property="gestureRecognizers" destination="NJy-Fg-CQm" appends="YES" id="OKV-QF-Noj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="jAN-ta-oGW" firstAttribute="top" secondItem="8wj-lo-jDN" secondAttribute="bottom" constant="20" id="267-qG-TjG"/>
+                            <constraint firstItem="jAN-ta-oGW" firstAttribute="top" secondItem="qqv-bD-mmF" secondAttribute="bottom" constant="20" id="6cZ-Nj-1WD"/>
+                            <constraint firstItem="8wj-lo-jDN" firstAttribute="centerX" secondItem="1qq-U6-Ov4" secondAttribute="centerX" id="6k3-Wl-sUv"/>
+                            <constraint firstItem="jAN-ta-oGW" firstAttribute="top" secondItem="0cO-nj-qGV" secondAttribute="bottom" constant="20" id="93M-CT-uMT"/>
+                            <constraint firstItem="0cO-nj-qGV" firstAttribute="leading" secondItem="1qq-U6-Ov4" secondAttribute="leading" constant="14" id="9Q1-LY-yvn"/>
+                            <constraint firstAttribute="trailing" secondItem="qqv-bD-mmF" secondAttribute="trailing" constant="14" id="Z2A-yT-xCg"/>
+                            <constraint firstItem="cMg-8d-ASF" firstAttribute="leading" secondItem="1qq-U6-Ov4" secondAttribute="leading" constant="14" id="c1h-IV-bZg"/>
+                            <constraint firstItem="6wN-Ss-x1l" firstAttribute="top" secondItem="tge-Yn-i0E" secondAttribute="bottom" id="fAv-p4-ckl"/>
+                            <constraint firstAttribute="trailing" secondItem="6wN-Ss-x1l" secondAttribute="trailing" constant="14" id="kx5-fE-6Iz"/>
+                            <constraint firstItem="cMg-8d-ASF" firstAttribute="top" secondItem="tge-Yn-i0E" secondAttribute="bottom" id="wJ1-OY-9Xq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btnCamera" destination="8wj-lo-jDN" id="gvS-ai-a4R"/>
+                        <outlet property="btnClose" destination="cMg-8d-ASF" id="ZSJ-kt-12W"/>
+                        <outlet property="btnFlash" destination="6wN-Ss-x1l" id="i3U-ac-NmC"/>
+                        <outlet property="btnFrontRear" destination="0cO-nj-qGV" id="0vn-yf-rEO"/>
+                        <outlet property="btnGallery" destination="qqv-bD-mmF" id="Hbi-to-28T"/>
+                        <outlet property="longPress" destination="NJy-Fg-CQm" id="4PG-Bs-u7w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vae-Tx-4w1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="NJy-Fg-CQm">
+                    <connections>
+                        <action selector="handleLongPress:" destination="CKM-A6-QJ1" id="lAu-Bm-eLl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="381" y="997"/>
+        </scene>
+        <!--Pick StoryVC-->
+        <scene sceneID="5cy-Ia-3C6">
+            <objects>
+                <viewController id="FXX-55-FQm" customClass="PickStoryVC" customModule="VideoSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NN4-EX-HOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="B5T-L3-K64"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xuw-Dl-iRY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tjg-6t-ogP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTN-07-zJo">
+                                <rect key="frame" x="20" y="180" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="BSX-7n-z45"/>
+                                    <constraint firstAttribute="width" constant="120" id="hS1-0g-Ta8"/>
+                                </constraints>
+                                <state key="normal" title="Gallery"/>
+                                <connections>
+                                    <action selector="btnGalleryTapped:" destination="FXX-55-FQm" eventType="touchUpInside" id="Atv-MG-tTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idk-Wh-5rG">
+                                <rect key="frame" x="186" y="180" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8PL-8i-CsJ"/>
+                                    <constraint firstAttribute="width" constant="120" id="uxP-hA-9Xk"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="btnCameraTapped:" destination="FXX-55-FQm" eventType="touchUpInside" id="MFk-iq-uzg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tjg-6t-ogP" secondAttribute="trailing" id="2Ge-Sb-hDJ"/>
+                            <constraint firstItem="B5T-L3-K64" firstAttribute="top" secondItem="tjg-6t-ogP" secondAttribute="bottom" id="7Nv-Rv-plC"/>
+                            <constraint firstItem="wTN-07-zJo" firstAttribute="centerY" secondItem="Xuw-Dl-iRY" secondAttribute="centerY" id="ELR-Hb-ES6"/>
+                            <constraint firstItem="tjg-6t-ogP" firstAttribute="leading" secondItem="Xuw-Dl-iRY" secondAttribute="leading" id="EVY-pe-fIG"/>
+                            <constraint firstAttribute="trailing" secondItem="idk-Wh-5rG" secondAttribute="trailing" constant="14" id="YyP-Lp-Mg3"/>
+                            <constraint firstItem="idk-Wh-5rG" firstAttribute="centerY" secondItem="Xuw-Dl-iRY" secondAttribute="centerY" id="cu5-LU-ejT"/>
+                            <constraint firstItem="wTN-07-zJo" firstAttribute="leading" secondItem="Xuw-Dl-iRY" secondAttribute="leading" constant="20" id="jQm-Uy-wmo"/>
+                            <constraint firstItem="tjg-6t-ogP" firstAttribute="top" secondItem="Xuw-Dl-iRY" secondAttribute="top" id="kNV-Rf-lJ9"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbB-yl-FsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="1604"/>
+        </scene>
     </scenes>
 </document>

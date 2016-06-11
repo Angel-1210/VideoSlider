@@ -13,6 +13,15 @@
 		1FDA0EE51D0BF1AB0060F726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDA0EE41D0BF1AB0060F726 /* Assets.xcassets */; };
 		1FDA0EE81D0BF1AB0060F726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDA0EE61D0BF1AB0060F726 /* LaunchScreen.storyboard */; };
 		1FDA0EF01D0BF8280060F726 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0EEF1D0BF8280060F726 /* PlayerCell.swift */; };
+		1FDA0EFA1D0C43320060F726 /* LLSimpleCamera+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0EF51D0C43320060F726 /* LLSimpleCamera+Helper.m */; };
+		1FDA0EFB1D0C43320060F726 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0EF71D0C43320060F726 /* LLSimpleCamera.m */; };
+		1FDA0EFC1D0C43320060F726 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0EF91D0C43320060F726 /* UIImage+FixOrientation.m */; };
+		1FDA0F041D0C437B0060F726 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0EFF1D0C437B0060F726 /* UIImage+Crop.m */; };
+		1FDA0F051D0C437B0060F726 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0F011D0C437B0060F726 /* UIImage+Resize.m */; };
+		1FDA0F061D0C437B0060F726 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0F031D0C437B0060F726 /* ViewUtils.m */; };
+		1FDA0F091D0C446B0060F726 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0F081D0C446B0060F726 /* CameraVC.swift */; };
+		1FDA0F0B1D0C5ED30060F726 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0F0A1D0C5ED30060F726 /* RecordButton.swift */; };
+		1FDA0F0D1D0C71A80060F726 /* PickStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA0F0C1D0C71A80060F726 /* PickStoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,22 @@
 		1FDA0EE71D0BF1AB0060F726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FDA0EE91D0BF1AB0060F726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FDA0EEF1D0BF8280060F726 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		1FDA0EF41D0C43320060F726 /* LLSimpleCamera+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLSimpleCamera+Helper.h"; sourceTree = "<group>"; };
+		1FDA0EF51D0C43320060F726 /* LLSimpleCamera+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLSimpleCamera+Helper.m"; sourceTree = "<group>"; };
+		1FDA0EF61D0C43320060F726 /* LLSimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSimpleCamera.h; sourceTree = "<group>"; };
+		1FDA0EF71D0C43320060F726 /* LLSimpleCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSimpleCamera.m; sourceTree = "<group>"; };
+		1FDA0EF81D0C43320060F726 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		1FDA0EF91D0C43320060F726 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		1FDA0EFE1D0C437B0060F726 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		1FDA0EFF1D0C437B0060F726 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		1FDA0F001D0C437B0060F726 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		1FDA0F011D0C437B0060F726 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		1FDA0F021D0C437B0060F726 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		1FDA0F031D0C437B0060F726 /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
+		1FDA0F071D0C439E0060F726 /* VideoSlider-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VideoSlider-Bridge.h"; sourceTree = "<group>"; };
+		1FDA0F081D0C446B0060F726 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		1FDA0F0A1D0C5ED30060F726 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		1FDA0F0C1D0C71A80060F726 /* PickStoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickStoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +81,55 @@
 		1FDA0EDC1D0BF1AB0060F726 /* VideoSlider */ = {
 			isa = PBXGroup;
 			children = (
+				1FDA0EF21D0C431D0060F726 /* ObjectiveC */,
 				1FDA0EDD1D0BF1AB0060F726 /* AppDelegate.swift */,
 				1FDA0EDF1D0BF1AB0060F726 /* ViewController.swift */,
 				1FDA0EEF1D0BF8280060F726 /* PlayerCell.swift */,
+				1FDA0F0A1D0C5ED30060F726 /* RecordButton.swift */,
+				1FDA0F081D0C446B0060F726 /* CameraVC.swift */,
+				1FDA0F0C1D0C71A80060F726 /* PickStoryVC.swift */,
 				1FDA0EE11D0BF1AB0060F726 /* Main.storyboard */,
 				1FDA0EE41D0BF1AB0060F726 /* Assets.xcassets */,
 				1FDA0EE61D0BF1AB0060F726 /* LaunchScreen.storyboard */,
 				1FDA0EE91D0BF1AB0060F726 /* Info.plist */,
+				1FDA0F071D0C439E0060F726 /* VideoSlider-Bridge.h */,
 			);
 			path = VideoSlider;
+			sourceTree = "<group>";
+		};
+		1FDA0EF21D0C431D0060F726 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				1FDA0EFD1D0C43710060F726 /* Utilities */,
+				1FDA0EF31D0C43320060F726 /* LLSimpleCamera */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		1FDA0EF31D0C43320060F726 /* LLSimpleCamera */ = {
+			isa = PBXGroup;
+			children = (
+				1FDA0EF41D0C43320060F726 /* LLSimpleCamera+Helper.h */,
+				1FDA0EF51D0C43320060F726 /* LLSimpleCamera+Helper.m */,
+				1FDA0EF61D0C43320060F726 /* LLSimpleCamera.h */,
+				1FDA0EF71D0C43320060F726 /* LLSimpleCamera.m */,
+				1FDA0EF81D0C43320060F726 /* UIImage+FixOrientation.h */,
+				1FDA0EF91D0C43320060F726 /* UIImage+FixOrientation.m */,
+			);
+			path = LLSimpleCamera;
+			sourceTree = "<group>";
+		};
+		1FDA0EFD1D0C43710060F726 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1FDA0EFE1D0C437B0060F726 /* UIImage+Crop.h */,
+				1FDA0EFF1D0C437B0060F726 /* UIImage+Crop.m */,
+				1FDA0F001D0C437B0060F726 /* UIImage+Resize.h */,
+				1FDA0F011D0C437B0060F726 /* UIImage+Resize.m */,
+				1FDA0F021D0C437B0060F726 /* ViewUtils.h */,
+				1FDA0F031D0C437B0060F726 /* ViewUtils.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +164,7 @@
 				TargetAttributes = {
 					1FDA0ED91D0BF1AA0060F726 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 45YJEEWVU8;
 					};
 				};
 			};
@@ -138,8 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDA0F061D0C437B0060F726 /* ViewUtils.m in Sources */,
+				1FDA0EFB1D0C43320060F726 /* LLSimpleCamera.m in Sources */,
+				1FDA0F051D0C437B0060F726 /* UIImage+Resize.m in Sources */,
+				1FDA0EFA1D0C43320060F726 /* LLSimpleCamera+Helper.m in Sources */,
 				1FDA0EF01D0BF8280060F726 /* PlayerCell.swift in Sources */,
+				1FDA0F041D0C437B0060F726 /* UIImage+Crop.m in Sources */,
+				1FDA0F0B1D0C5ED30060F726 /* RecordButton.swift in Sources */,
 				1FDA0EE01D0BF1AB0060F726 /* ViewController.swift in Sources */,
+				1FDA0F091D0C446B0060F726 /* CameraVC.swift in Sources */,
+				1FDA0F0D1D0C71A80060F726 /* PickStoryVC.swift in Sources */,
+				1FDA0EFC1D0C43320060F726 /* UIImage+FixOrientation.m in Sources */,
 				1FDA0EDE1D0BF1AB0060F726 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -242,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -253,10 +328,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VideoSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dharmesh.VideoSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoSlider/VideoSlider-Bridge.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -264,10 +345,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VideoSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dharmesh.VideoSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoSlider/VideoSlider-Bridge.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -290,6 +377,7 @@
 				1FDA0EEE1D0BF1AB0060F726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
