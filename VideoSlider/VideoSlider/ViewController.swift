@@ -79,6 +79,16 @@ class ViewController : UIViewController, UICollectionViewDelegateFlowLayout, UIC
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        do {
+            let dictionary = ["id" : "1", "name" : "test", "price" : 12.4]
+            let user = try User(dictionary: dictionary)
+            debugPrint(user.id)
+            debugPrint(user.name)
+            debugPrint(user.price)
+            
+        } catch let error {
+            debugPrint(error)
+        }
     }
     
     //------------------------------------------------------
